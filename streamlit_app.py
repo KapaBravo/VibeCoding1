@@ -1924,10 +1924,10 @@ def main():
         
         with col3:
             st.markdown("""
-            <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center; color: #1a202c; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); border: 2px solid #e2e8f0;">
+            <div style="background: linear-gradient(135deg, #718096 0%, #4a5568 100%); padding: 2rem; border-radius: 12px; text-align: center; color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); border: 1px solid #a0aec0;">
                 <div style="font-size: 3rem; margin-bottom: 1rem;">💪</div>
-                <h3 style="margin-bottom: 0.5rem; color: #1a202c;">100% Personalizado</h3>
-                <p style="font-size: 0.9rem; margin: 0; color: #4a5568;">
+                <h3 style="margin-bottom: 0.5rem; color: white;">100% Personalizado</h3>
+                <p style="font-size: 0.9rem; margin: 0; opacity: 0.9;">
                     Adaptado ao teu perfil, actividade e objectivos
                 </p>
             </div>
