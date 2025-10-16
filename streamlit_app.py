@@ -1672,17 +1672,16 @@ def display_meal_card(meal):
             st.metric("Calorias", f"{meal['calories']}")
         
         st.markdown("<br>", unsafe_allow_html=True)
-            
-            # Macros
-            st.write("**Macronutrientes:**")
-            col_macro1, col_macro2, col_macro3 = st.columns(3)
-            with col_macro1:
-                st.metric("Proteína", f"{meal['protein']}g")
-            with col_macro2:
-            st.metric("Hidratos", f"{meal['carbs']}g")
-            with col_macro3:
-                st.metric("Gordura", f"{meal['fat']}g")
         
+        # Macros
+        st.write("**Macronutrientes:**")
+        col_macro1, col_macro2, col_macro3 = st.columns(3)
+        with col_macro1:
+            st.metric("Proteína", f"{meal['protein']}g")
+        with col_macro2:
+            st.metric("Hidratos", f"{meal['carbs']}g")
+        with col_macro3:
+            st.metric("Gordura", f"{meal['fat']}g")
         
         # Ingredients
         st.write("**Ingredientes:**")
