@@ -1779,7 +1779,7 @@ def create_header():
                         <img src="data:image/png;base64,{logo_data}" alt="Luis Ferreira Logo" style="width: 120px; height: 120px; object-fit: contain;">
                     </div>
                     <div class="brand-info">
-                        <h1>Calculadora Fitness by Luís Ferreira 💪🏽</h1>
+                        <h1>Calculadora Fitness by Luís Ferreira 🍎</h1>
                     </div>
                 </div>
             </div>
@@ -1793,7 +1793,7 @@ def create_header():
                 <div class="logo-section">
                     <div class="logo">💪</div>
                     <div class="brand-info">
-                        <h1>Calculadora Fitness by Luís Ferreira 💪🏽</h1>
+                        <h1>Calculadora Fitness by Luís Ferreira 🍎</h1>
                     </div>
                 </div>
             </div>
