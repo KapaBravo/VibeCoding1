@@ -1812,6 +1812,85 @@ def main():
     st.markdown("### 👈🏽 Para fazeres magia, preenche as tuas informações do lado esquerdo")
     st.markdown("---")
     
+    # Área central antes dos resultados - Cards informativos
+    if not st.session_state.get('calculated', False):
+        st.markdown("""
+        <div style="text-align: center; padding: 2rem 0;">
+            <h2 style="color: #667eea; margin-bottom: 1.5rem;">🎯 Bem-vindo à Tua Calculadora Fitness!</h2>
+            <p style="font-size: 1.1rem; color: #6b7280; margin-bottom: 2rem;">
+                Descobre as tuas necessidades calóricas personalizadas e recebe sugestões de refeições adaptadas aos teus objectivos.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        # Cards com benefícios
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            st.markdown("""
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 12px; text-align: center; color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
+                <h3 style="margin-bottom: 0.5rem; color: white;">Cálculo Preciso</h3>
+                <p style="font-size: 0.9rem; margin: 0; opacity: 0.9;">
+                    Baseado em fórmulas científicas comprovadas (Mifflin-St Jeor)
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        with col2:
+            st.markdown("""
+            <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 2rem; border-radius: 12px; text-align: center; color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🍽️</div>
+                <h3 style="margin-bottom: 0.5rem; color: white;">50+ Receitas</h3>
+                <p style="font-size: 0.9rem; margin: 0; opacity: 0.9;">
+                    Refeições deliciosas e saudáveis para todos os objectivos
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        with col3:
+            st.markdown("""
+            <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 2rem; border-radius: 12px; text-align: center; color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">💪</div>
+                <h3 style="margin-bottom: 0.5rem; color: white;">100% Personalizado</h3>
+                <p style="font-size: 0.9rem; margin: 0; opacity: 0.9;">
+                    Adaptado ao teu perfil, actividade e objectivos
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
+        
+        st.markdown("<br><br>", unsafe_allow_html=True)
+        
+        # Informação adicional com ícones
+        st.markdown("""
+        <div style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+            <h3 style="text-align: center; color: #1f2937; margin-bottom: 1.5rem;">📝 Como Funciona?</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                <div style="display: flex; align-items: start; gap: 1rem;">
+                    <div style="background: #667eea; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+                    <div>
+                        <h4 style="margin: 0 0 0.5rem 0; color: #1f2937;">Preenche os Teus Dados</h4>
+                        <p style="margin: 0; color: #6b7280; font-size: 0.9rem;">Idade, peso, altura e nível de actividade</p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: start; gap: 1rem;">
+                    <div style="background: #f5576c; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+                    <div>
+                        <h4 style="margin: 0 0 0.5rem 0; color: #1f2937;">Define o Teu Objectivo</h4>
+                        <p style="margin: 0; color: #6b7280; font-size: 0.9rem;">Perder, manter ou ganhar peso</p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: start; gap: 1rem;">
+                    <div style="background: #00f2fe; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+                    <div>
+                        <h4 style="margin: 0 0 0.5rem 0; color: #1f2937;">Recebe o Teu Plano</h4>
+                        <p style="margin: 0; color: #6b7280; font-size: 0.9rem;">Calorias, macros e sugestões de refeições</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+    
     # Sidebar para informações pessoais
     with st.sidebar:
         st.header("📊 As Tuas Informações")
