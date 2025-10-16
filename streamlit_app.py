@@ -2086,24 +2086,42 @@ def main():
     create_footer()
 
 def create_footer():
+    import os
+    import base64
+    
     st.markdown("---")
-    st.markdown("""
-    <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); margin: 2rem -1rem -1rem -1rem; border-radius: 12px 12px 0 0;">
-        <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-            <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">💪</div>
-            <div>
-                <h3 style="margin: 0; color: #1f2937; font-size: 1.1rem;">Luis Ferreira</h3>
-                <p style="margin: 0; color: #6b7280; font-size: 0.9rem;">Personal Trainer</p>
+    
+    # Carregar logotipo para o footer
+    logo_path = "assets/logo.png"
+    if os.path.exists(logo_path):
+        with open(logo_path, "rb") as f:
+            logo_data = base64.b64encode(f.read()).decode()
+        
+        st.markdown(f"""
+        <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); margin: 2rem -1rem -1rem -1rem; border-radius: 12px 12px 0 0;">
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
+                <img src="data:image/png;base64,{logo_data}" alt="Luis Ferreira Logo" style="height: 80px; object-fit: contain;">
             </div>
+            <p style="color: #6b7280; font-size: 0.9rem; margin: 0;">
+                Desenvolvido com ❤️ para te ajudar a alcançar os teus objectivos fitness
+            </p>
+            <p style="color: #9ca3af; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
+                © 2024 - Todos os direitos reservados
+            </p>
         </div>
-        <p style="color: #6b7280; font-size: 0.9rem; margin: 0;">
-            Desenvolvido com ❤️ para te ajudar a alcançar os teus objectivos fitness
-        </p>
-        <p style="color: #9ca3af; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
-            © 2024 - Todos os direitos reservados
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
+    else:
+        # Fallback sem logo
+        st.markdown("""
+        <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); margin: 2rem -1rem -1rem -1rem; border-radius: 12px 12px 0 0;">
+            <p style="color: #6b7280; font-size: 0.9rem; margin: 0;">
+                Desenvolvido com ❤️ para te ajudar a alcançar os teus objectivos fitness
+            </p>
+            <p style="color: #9ca3af; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
+                © 2024 - Todos os direitos reservados
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
 
 # Run the app
 if __name__ == "__main__":
