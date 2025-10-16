@@ -1761,23 +1761,54 @@ def add_custom_css():
     """, unsafe_allow_html=True)
 
 def create_header():
-    st.markdown("""
-    <div class="header-container">
-        <div class="header-content">
-            <div class="logo-section">
-                <div class="logo">💪</div>
-                <div class="brand-info">
-                    <h1>Luis Ferreira</h1>
-                    <p>Personal Trainer</p>
+    # Tenta carregar o logo, se não existir usa emoji
+    import os
+    logo_path = "assets/logo.png"
+    
+    if os.path.exists(logo_path):
+        # Usar imagem do logo
+        import base64
+        with open(logo_path, "rb") as f:
+            logo_data = base64.b64encode(f.read()).decode()
+        
+        st.markdown(f"""
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-image">
+                        <img src="data:image/png;base64,{logo_data}" alt="Luis Ferreira Logo" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                    </div>
+                    <div class="brand-info">
+                        <h1>Luis Ferreira</h1>
+                        <p>Personal Trainer</p>
+                    </div>
+                </div>
+                <div class="app-title">
+                    <span class="dumbbell-icon">🏋️</span>
+                    <span>Calculadora Fitness</span>
                 </div>
             </div>
-            <div class="app-title">
-                <span class="dumbbell-icon">🏋️</span>
-                <span>Calculadora Fitness</span>
+        </div>
+        """, unsafe_allow_html=True)
+    else:
+        # Fallback para emoji se imagem não existir
+        st.markdown("""
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">💪</div>
+                    <div class="brand-info">
+                        <h1>Luis Ferreira</h1>
+                        <p>Personal Trainer</p>
+                    </div>
+                </div>
+                <div class="app-title">
+                    <span class="dumbbell-icon">🏋️</span>
+                    <span>Calculadora Fitness</span>
+                </div>
             </div>
         </div>
-    </div>
-    """, unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
 
 # Interface principal
 def main():
