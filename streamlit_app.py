@@ -1779,7 +1779,7 @@ def create_header():
                         <img src="data:image/png;base64,{logo_data}" alt="Luis Ferreira Logo" style="width: 120px; height: 120px; object-fit: contain;">
                     </div>
                     <div class="brand-info">
-                        <h1>Calculadora de Calorias</h1>
+                        <h1>Calculadora Fitness by Luís Ferreira 💪🏽</h1>
                     </div>
                 </div>
             </div>
@@ -1793,7 +1793,7 @@ def create_header():
                 <div class="logo-section">
                     <div class="logo">💪</div>
                     <div class="brand-info">
-                        <h1>Calculadora de Calorias</h1>
+                        <h1>Calculadora Fitness by Luís Ferreira 💪🏽</h1>
                     </div>
                 </div>
             </div>
@@ -1808,8 +1808,8 @@ def main():
     # Criar header personalizado
     create_header()
     
-    # Título principal (mais discreto agora)
-    st.markdown("### 🍎 Calculadora de Calorias & Sugestões de Refeições")
+    # Título principal
+    st.markdown("### 👈🏽 Para fazeres magia, preenche as tuas informações do lado esquerdo")
     st.markdown("---")
     
     # Sidebar para informações pessoais
