@@ -1588,9 +1588,82 @@ def get_meal_suggestions(goal, target_calories, num_meals=3):
     
     return random.sample(suitable_meals, min(num_meals, len(suitable_meals)))
 
+def get_meal_image(meal_name, category):
+    """Retorna URL de imagem apropriada para cada refeição."""
+    # Dicionário de imagens por tipo de refeição
+    meal_images = {
+        # Café da Manhã
+        "Aveia com Frutas Vermelhas": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?w=800&q=80",
+        "Omelete de Espinafre": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800&q=80",
+        "Smoothie Verde Detox": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=800&q=80",
+        "Torrada Integral com Abacate": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=800&q=80",
+        "Panquecas de Banana Light": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=800&q=80",
+        "Panquecas de Aveia": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80",
+        "Torrada de Abacate com Ovo": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&q=80",
+        "Aveia com Frutas e Granola": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?w=800&q=80",
+        "Omelete de Queijo e Ervas": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=800&q=80",
+        "Vitamina Calórica": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=800&q=80",
+        "Shake Verde Proteico": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=800&q=80",
+        "Panqueca Americana Proteica": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=800&q=80",
+        "Bowl de Granola Hipercalórico": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=800&q=80",
+        "Torrada de Abacate com Ovo e Amendoim": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800&q=80",
+        
+        # Almoço
+        "Salada de Frango Grelhado": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80",
+        "Salmão com Legumes Assados": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
+        "Quinoa com Legumes": "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=800&q=80",
+        "Wrap de Atum Light": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800&q=80",
+        "Sopa de Legumes Detox": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
+        "Arroz Integral com Carne": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800&q=80",
+        "Quinoa com Legumes Coloridos": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+        "Salmão Grelhado com Salada": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800&q=80",
+        "Wrap Integral Completo": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800&q=80",
+        "Massa com Frango e Pesto": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&q=80",
+        "Massa com Frango": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&q=80",
+        "Arroz Integral com Carne Cremoso": "https://images.unsplash.com/photo-1516714819001-8ee7a13b71d7?w=800&q=80",
+        "Sanduíche de Frango Completo": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=800&q=80",
+        "Massa com Frango ao Forno": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&q=80",
+        "Bowl de Quinoa Completo": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80",
+        
+        # Jantar
+        "Peixe Branco com Aspargos": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800&q=80",
+        "Frango com Vegetais ao Vapor": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=800&q=80",
+        "Berinjela Recheada Light": "https://images.unsplash.com/photo-1572695157849-1af97d311a1c?w=800&q=80",
+        "Frango com Batata Doce": "https://images.unsplash.com/photo-1598511726623-d2e9996892f0?w=800&q=80",
+        "Picanha com Batata": "https://images.unsplash.com/photo-1558030006-450675393462?w=800&q=80",
+        "Salmão com Quinoa": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
+        "Picanha com Batata Completa": "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80",
+        "Carne com Arroz e Feijão": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800&q=80",
+        "Wrap de Frango": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800&q=80",
+        "Frango à Parmegiana": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=800&q=80",
+        "Costela com Mandioca": "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80",
+        "Lasanha de Berinjela": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&q=80",
+        
+        # Lanches
+        "Iogurte Grego com Nozes": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=80",
+        "Maçã com Pasta de Amêndoa": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=800&q=80",
+        "Mix de Oleaginosas Light": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=800&q=80",
+        "Smoothie Proteico": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=800&q=80",
+        "Chocolate com Amêndoas": "https://images.unsplash.com/photo-1511381939415-e44015466834?w=800&q=80",
+        "Barra de Cereal Caseira": "https://images.unsplash.com/photo-1626200418062-5e5c287d8a8c?w=800&q=80",
+        "Mix de Castanhas": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=800&q=80",
+        "Vitamina de Banana com Aveia": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=800&q=80",
+        "Milkshake Proteico": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800&q=80",
+        "Chocolate 70% com Amêndoas": "https://images.unsplash.com/photo-1511381939415-e44015466834?w=800&q=80",
+    }
+    
+    # Retorna imagem específica ou genérica por categoria
+    return meal_images.get(meal_name, "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80")
+
 def display_meal_card(meal):
-    """Exibe um cartão de refeição com todos os detalhes."""
+    """Exibe um cartão de refeição com todos os detalhes e imagem."""
     with st.expander(f"🍽️ {meal['name']} - {meal['calories']} kcal", expanded=False):
+        # Imagem da refeição
+        meal_image_url = get_meal_image(meal['name'], meal['category'])
+        st.image(meal_image_url, use_container_width=True)
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+        
         col1, col2 = st.columns([2, 1])
         
         with col1:
