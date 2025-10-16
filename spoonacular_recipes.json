@@ -1,0 +1,593 @@
+{
+  "lose": [
+    {
+      "name": "Watching What I Eat: Peanut Butter Banana Oat Breakfast Cookies with Carob / Chocolate Chips",
+      "calories": 103,
+      "protein": 4,
+      "carbs": 10,
+      "fat": 5,
+      "time": "45 min",
+      "category": "Café da Manhã",
+      "ingredients": [
+        "2 ripe bananas, mashed until smooth & creamy",
+        "1 tsp butter flavor extract ** (optional)",
+        "1/4 cup carob or chocolate chips (**optional)",
+        "1/3 cup peanut butter - creamy or chunky",
+        "1/4 cup chopped nuts (peanut, walnut, or your favorite)",
+        "1 1/2 cups quick oatmeal - uncooked (or use old fashioned oats for more oatmeal texture)",
+        "2/3 cup unsweetened applesauce",
+        "1 tsp vanilla extract",
+        "1 scoop vanilla protein powder ** (can be made without, cookie will just be lower in protein)"
+      ],
+      "recipe": [
+        "Preheat heat oven to 350 degrees.In a large bowl, mix mashed banana & peanut butter until completely combined then add in the applesauce, vanilla protein powder & the extract(s) ~ mix again until all are completely combined.",
+        "Add in the oatmeal & nuts to the banana mixture & combine. (** add the optional carob / chocolate chips at this time if you want them mixed throughout)",
+        "Let dough rest for 10 minutes.Drop cookie dough, by spoonfuls, onto a parchment paper lined cookie sheet & flatten cookies into circles. (** if you just want the carob / chocolate chips on the top of the cookies, add now)",
+        "Bake cookies approx. 20-30 minutes (some like their cookies less cooked, some cooked more - try it both ways to find which works best for your tastes) or until golden brown & done.",
+        "Remove from oven & let rest on cookie sheet for 5 minutes, then move to cooling rack. (if you want the traditional fork tong marks on the cookies, use a pizza cutter or sharp knife to score the tops of the cookies while they're still warm)When cookies are completely cool, store in a covered container. Enjoy!...or with a cuppa tea."
+      ],
+      "image": "https://img.spoonacular.com/recipes/945221-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 945221
+    },
+    {
+      "name": "Easy Homemade Apple Fritters",
+      "calories": 148,
+      "protein": 2,
+      "carbs": 34,
+      "fat": 1,
+      "time": "30 min",
+      "category": "Café da Manhã",
+      "ingredients": [
+        "1 cup all purpose flour",
+        "1 cup chopped apple",
+        "1 1/2 teaspoons baking powder",
+        "1 teaspoon cinnamon",
+        "1 egg",
+        "1/3 cup milk",
+        "1 1/2 tablespoons milk",
+        "2 cups powdered sugar",
+        "3/4 teaspoon salt",
+        "1/4 cup sugar"
+      ],
+      "recipe": [
+        "Combine flour, sugar, salt, baking powder, cinnamon. Stir in milk and egg until just combined. Fold in apple.",
+        "Pour oil into skillet so that it is approximately 1 1/2 deep.",
+        "Heat oil on high. Oil is ready when a little dough thrown in floats to top. Carefully add dough to oil in heaping teaspoons. Cook until brown, about 2 minutes, then flip. Cook another 1-2 minutes, until both sides are browned.",
+        "Transfer briefly to paper towels to absorb excess oil, then transfer to cooling rack. Make glaze by stirring milk and powdered sugar together in a small bowl.",
+        "Drizzle over apple fritters. Wait approximately 3 minutes for glaze to harden, then flip fritters and drizzle glaze over the other side. Best served warm."
+      ],
+      "image": "https://img.spoonacular.com/recipes/775666-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 775666
+    },
+    {
+      "name": "Roasted Mediterranean Vegetable Soup",
+      "calories": 174,
+      "protein": 4,
+      "carbs": 18,
+      "fat": 10,
+      "time": "45 min",
+      "category": "Snack",
+      "ingredients": [
+        "3 tablespoons oil",
+        "1 lb 9 oz ripe tomatoes, skinned, cored and halved",
+        "3 large yellow bell peppers. seeded and halved",
+        "3 zucchini, halved lengthwise",
+        "4 garlic cloves, halved",
+        "2 onion, cut into eights",
+        "pinch of thyme",
+        "6 cups vegetable stock",
+        "1/2 cup cream or non-dairy creamer like MimicCreme",
+        "salt and pepper"
+      ],
+      "recipe": [
+        "Preheat oven to 375 F.",
+        "Brush a large shallow baking dish with olive oil.",
+        "Laying them cut-sized down, arrange the tomatoes, bell peppers, zucchini and eggplant in one layer (use two dishes if necessary).",
+        "Tuck the garlic cloves and onion pieces into the gaps and drizzle the vegetables with the remaining olive oil.",
+        "Season lightly with salt and pepper and sprinkle with thyme.",
+        "Place in preheated oven and bake uncovered, for 30-35 minutes, or until soft and browned around the edges.",
+        "Let cool, then scrape out the eggplant flesh and remove the skin from the bell peppers.",
+        "Working in batches, put the eggplant and bell pepper flesh, together with the tomatoes, zucchini, garlic and onion place into a bowl and chop together using a knife.",
+        "Combine the stock and chopped vegetable mixture in a saucepan and simmer over medium heat for 20-30 minutes, until all the vegetables are tender and the flavors have completely blended.",
+        "Stir in the cream and simmer over low heat for about 5 minutes, stirring occasionally until hot."
+      ],
+      "image": "https://img.spoonacular.com/recipes/658607-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 658607
+    },
+    {
+      "name": "Griet's vegetable soup",
+      "calories": 181,
+      "protein": 4,
+      "carbs": 22,
+      "fat": 7,
+      "time": "45 min",
+      "category": "Snack",
+      "ingredients": [
+        "1 small sized head red cabbage",
+        "1 small onion",
+        "1 stick leeks",
+        "1 carrot",
+        "1 small turnip root",
+        "3 small potatoes",
+        "salt",
+        "black pepper",
+        "3 tablespoons spoons olive or vegetable oil",
+        "500 milliliters water"
+      ],
+      "recipe": [
+        "Chop the vegetables.",
+        "In a large saucepan, cook the onion and leeks in olive oil, over moderate heat. When the onions are softened, add the rest of the vegetables and stir well, so that they are coated with oil.",
+        "Cover the pan and cook for about 5 minute.",
+        "Add the water and the spices, and cook for 20 minutes, stirring occasionally. Your Griets soup is ready!"
+      ],
+      "image": "https://img.spoonacular.com/recipes/645572-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 645572
+    },
+    {
+      "name": "Shrimp and Asparagus Foil Packs with Garlic Lemon Butter Sauce",
+      "calories": 327,
+      "protein": 37,
+      "carbs": 3,
+      "fat": 18,
+      "time": "45 min",
+      "category": "Almoço/Jantar",
+      "ingredients": [
+        "1 lb medium thickness asparagus woody ends trimmed",
+        "6 Tbsp butter diced into small cubes",
+        "3 Tbsp dry white wine or chicken broth",
+        "2 Tbsp chopped fresh parsley",
+        "4 tsp minced garlic",
+        "1 1/2 Tbsp fresh lemon juice",
+        "2 tsp lemon zest",
+        "Salt and freshly ground black pepper",
+        "1 1/2 lbs large (21/25) shrimp peeled and deveined*"
+      ],
+      "recipe": [
+        "Preheat a grill to medium-high heat (about 400 - 425 degrees).",
+        "Cut 4 sheets of 14 by 12-inch heavy duty aluminum foil then lay each piece separately on countertop.",
+        "Divide shrimp among packets near center then place asparagus to one side of the shrimp (going the long direction of the foil).",
+        "Pour 1/2 Tbsp white wine over each.",
+        "Sprinkle over garlic (1 tsp per packet) and lemon zest then season with salt and pepper. Divide butter pieces evenly among packets layering them over the shrimp and asparagus. Wrap packets in and crimp edges together then wrap ends up (don't wrap too tight - keep a little extra space inside for heat to circulate).",
+        "Grill, sealed side upward, until shrimp has cooked through, about 9 - 10 minutes. Carefully unwrap then drizzle with lemon juice (or just serve with lemon wedges for spritzing) and sprinkle with parsley.",
+        "Recipe source: Cooking Classy"
+      ],
+      "image": "https://img.spoonacular.com/recipes/997285-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 997285
+    },
+    {
+      "name": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+      "calories": 344,
+      "protein": 28,
+      "carbs": 26,
+      "fat": 12,
+      "time": "30 min",
+      "category": "Almoço/Jantar",
+      "ingredients": [
+        "1 bell pepper",
+        "Cooked rice, for serving",
+        "1 tsp Dried basil",
+        "2 – 3 oz. of crumbled feta cheese per pound of fish",
+        "1 lb fish fillets",
+        "2 Tablespoons olive oil per pound of fish",
+        "1 tsp dried oregano",
+        "Freshly ground pepper",
+        "1/2 Red onion",
+        "Salt & pepper"
+      ],
+      "recipe": [
+        "Preheat the oven to 450 degrees F. Choose an oven-proof baking dish that your fish will fit in without overlapping and spray it with cooking spray.",
+        "Lay the fish fillets in the baking pan in a single layer, season with salt and pepper, then top the fish with red onion and bell pepper.",
+        "Sprinkle with dried basil and oregano, the tomato, and the feta cheese, then drizzle the white wine and olive oil over top. Grind some fresh pepper over the top.",
+        "Bake uncovered for about 12 – 15 minutes or until the fish flakes easily with a fork. Squeeze the lemon wedges over the cooked fish, garnish with the fresh basil and/or oregano and serve with hot cooked rice."
+      ],
+      "image": "https://img.spoonacular.com/recipes/716408-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 716408
+    }
+  ],
+  "maintain": [
+    {
+      "name": "How to Make the Best Chicken Jambalaya",
+      "calories": 450,
+      "protein": 26,
+      "carbs": 35,
+      "fat": 21,
+      "time": "55 min",
+      "category": "Almoço/Jantar",
+      "ingredients": [
+        "▢ 2 tbsp unsalted butter",
+        "▢ 1 lb sliced sausage",
+        "▢ 1 lb boneless skinless chicken breasts cut into bite sized pieces",
+        "▢ 1 cup yellow onion chopped",
+        "▢ 1 cup celery chopped",
+        "▢ 1/2 cup bell pepper chopped",
+        "▢ 1 tbsp minced garlic",
+        "▢ 1 cup tomato sauce",
+        "▢ 14.5 oz diced tomatoes",
+        "▢ 2 1/2 cups chicken stock"
+      ],
+      "recipe": [
+        "Combine the creole seasoning ingredients in a small bowl and set aside.",
+        "Melt butter in a large dutch oven over medium-high heat.",
+        "Add the sausage until it starts to brown, about 3 minutes.",
+        "Add the chicken and continue to cook until brown, about 3-5 minutes. Stir frequently.",
+        "Turn the stove top down to medium heat.",
+        "Preheat your oven to 350 degrees.",
+        "Stir in the seasoning mix of cajun spices and 1/2 of the chopped onion, celery, green bell pepper, and garlic. Cook until vegetables get tender, about 3-5 minutes. Stir frequently and scrape the bottom of the pot frequently.",
+        "Stir in the tomato sauce and cook for about one minute.",
+        "Stir in the remaining onion, celery, bell pepper, garlic, and the diced tomatoes then remove from heat.",
+        "Stir in the rice and chicken stock, mix the ingredients well."
+      ],
+      "image": "https://img.spoonacular.com/recipes/715545-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 715545
+    },
+    {
+      "name": "Cheesy Chicken and Rice Casserole",
+      "calories": 464,
+      "protein": 31,
+      "carbs": 21,
+      "fat": 28,
+      "time": "60 min",
+      "category": "Almoço/Jantar",
+      "ingredients": [
+        "2 grilled chicken breasts",
+        "2 cups rice (cooked)",
+        "1 8oz package cream cheese",
+        "1 10oz. can cream of mushroom soup",
+        "1 medium green pepper",
+        "1½ cup shredded Monterrey Jack cheese",
+        "½ red onion",
+        "Salt and pepper to taste",
+        "2 Tbsp Country crock buttery spread"
+      ],
+      "recipe": [
+        "Heat your oven to 350.Take your 2 grilled chicken breasts and allow them to slightly cool. Shred chicken breasts and place to the side in a mixing bowl.Finely chop your pepper and onion and saut in 2 Tbsp Country Crock for 5 minutes until soft.",
+        "Add cream cheese into the onion and pepper and mix well.",
+        "Pour into the large bowl with chicken.",
+        "Mix in rice, hot sauce, cream of mushroom soup,  cup Monterrey Jack cheese, and salt and pepper.",
+        "Mix well.",
+        "Pour mixture in a 9 x 13 dish, and cover with remaining cheese and add salt and pepper to taste.",
+        "Bake for 30 minutes. Allow to cool for 5 minutes before serving."
+      ],
+      "image": "https://img.spoonacular.com/recipes/715397-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 715397
+    },
+    {
+      "name": "Pasta with Garlic, Scallions, Cauliflower & Breadcrumbs",
+      "calories": 543,
+      "protein": 17,
+      "carbs": 77,
+      "fat": 16,
+      "time": "45 min",
+      "category": "Almoço/Jantar",
+      "ingredients": [
+        "1 tbsp butter",
+        "about 2 cups frozen cauliflower florets, thawed, cut into bite-sized pieces",
+        "2 tbsp grated cheese (I used romano)",
+        "1-2 tbsp extra virgin olive oil",
+        "5-6 cloves garlic",
+        "6-8 ounces pasta (I used linguine)",
+        "couple of pinches red pepper flakes, optional",
+        "salt and pepper, to taste",
+        "3 scallions, chopped, white and green parts separated",
+        "2-3 tbsp white wine"
+      ],
+      "recipe": [],
+      "image": "https://img.spoonacular.com/recipes/716429-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 716429
+    },
+    {
+      "name": "Butternut Squash Gnocchi With Whiskey Cream Sauce",
+      "calories": 539,
+      "protein": 14,
+      "carbs": 32,
+      "fat": 23,
+      "time": "45 min",
+      "category": "Almoço/Jantar",
+      "ingredients": [
+        "1 small butternut squash, about 1 lb.",
+        "½ cup Parmesan cheese",
+        "¾ tsp. nutmeg, cinnamon, or ginger",
+        "1 tsp. salt",
+        "Pepper to taste",
+        "2 eggs",
+        "3 Tb. butter",
+        "2 Tb. flour",
+        "2 shallots, finely diced",
+        "4 cloves garlic, minced"
+      ],
+      "recipe": [
+        "Preheat the oven to 450 degrees F.",
+        "Cut the squach in half.",
+        "Remove the seeds and lay on a oiled, rimmed baking sheets. Roast the squash until soft30-40 minutes.",
+        "Scoop the flesh of the squash out and place it in the food processor. Puree until completely smooth.",
+        "Mix the pureed squash with Parmesan cheese, nutmeg, salt, pepper and eggs. Then add the flour into the mixture and work together by hand. It will be very sticky.",
+        "Once smooth, flour a work surface and a large piece of parchment paper. Flour your hands and grab a handful of dough.",
+        "Roll into a long strip, about  inch wide.",
+        "Cut the strip into  pieces.",
+        "This is the tricky part~",
+        "Place each piece in the palm of your hand (or on the cutting board) and gently roll with a fork to create ridges."
+      ],
+      "image": "https://img.spoonacular.com/recipes/636599-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 636599
+    },
+    {
+      "name": "Salmon Quinoa Risotto",
+      "calories": 405,
+      "protein": 22,
+      "carbs": 33,
+      "fat": 18,
+      "time": "45 min",
+      "category": "Almoço/Jantar",
+      "ingredients": [
+        "1 cup Quinoa",
+        "1 medium Onion (diced)",
+        "8 Leaves of Kale (stems removed and cut into ribbons)",
+        "5 Garlic Cloves (finely chopped)",
+        "3 tablespoons Olive Oil (divided)",
+        "10 ounces Poached Salmon (flaked)*",
+        "32 ounces Organic Vegetable Stock",
+        "Salt",
+        "Pepper"
+      ],
+      "recipe": [
+        "In a 4 quart saucepan, heat 2 tablespoons of olive oil over medium high heat.",
+        "When oil is shimmering, add diced onion.",
+        "Saute onion until transparent.",
+        "Add quinoa to onion mixture and stir, to toast quinoa, for 2 minutes.",
+        "Add 1 cup of vegetable stock to quinoa and onions.",
+        "Stir until stock is absorbed.  Once stock is absorbed, add 1 cup of stock.",
+        "Continue stirring until stock is absorbed.",
+        "Add remaining stock in 1/2 cup intervals, stirring until all stock is absorbed.",
+        "Remove from heat.",
+        "While preparing the onion quinoa mixture, heat 1 tablespoon of oil in a saute pan with chopped garlic (over medium high heat)."
+      ],
+      "image": "https://img.spoonacular.com/recipes/659109-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 659109
+    },
+    {
+      "name": "Cherry Coconut Milk Smoothie",
+      "calories": 305,
+      "protein": 4,
+      "carbs": 33,
+      "fat": 17,
+      "time": "45 min",
+      "category": "Café da Manhã",
+      "ingredients": [
+        "1 frozen banana, sliced (2/3 cup frozen slices)",
+        "2 cups fresh cherries, pitted",
+        "2/3 cup coconut milk",
+        "1/3 cup almond or hemp milk, or more as needed",
+        "1 teaspoon vanilla"
+      ],
+      "recipe": [
+        "Combine all of the ingredients in a blender and process until smooth.",
+        "Add a bit more almond or hemp milk if the mixture is too thick.Tip: To freeze bananas for smoothies, peel the banana and cut into slices.",
+        "Place the slices on a baking sheet lined with parchment paper and freeze. Once frozen, transfer to a freezer-friendly container or freezer bag. The bananas will freeze well for up to 4 to 6 months."
+      ],
+      "image": "https://img.spoonacular.com/recipes/794350-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 794350
+    },
+    {
+      "name": "Powerhouse Almond Matcha Superfood Smoothie",
+      "calories": 281,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 13,
+      "time": "10 min",
+      "category": "Café da Manhã",
+      "ingredients": [
+        "2 tablespoons unsalted natural almond butter",
+        "1 1/2 cups unsweetened almond milk",
+        "1 medium frozen banana",
+        "2 teaspoons chia seeds",
+        "1 cup baby kale, packed",
+        "1/2 cup frozen mango pieces",
+        "1 tablespoon matcha green tea powder",
+        "3/4 cup frozen pineapple",
+        "1/2 teaspoon vanilla extract"
+      ],
+      "recipe": [
+        "Combine all of the ingredients in a blender. Blend on high until smooth.",
+        "Serve immediately."
+      ],
+      "image": "https://img.spoonacular.com/recipes/756814-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 756814
+    }
+  ],
+  "gain": [
+    {
+      "name": "Watching What I Eat: Peanut Butter Banana Oat Breakfast Cookies with Carob / Chocolate Chips",
+      "calories": 103,
+      "protein": 4,
+      "carbs": 10,
+      "fat": 5,
+      "time": "45 min",
+      "category": "Café da Manhã",
+      "ingredients": [
+        "2 ripe bananas, mashed until smooth & creamy",
+        "1 tsp butter flavor extract ** (optional)",
+        "1/4 cup carob or chocolate chips (**optional)",
+        "1/3 cup peanut butter - creamy or chunky",
+        "1/4 cup chopped nuts (peanut, walnut, or your favorite)",
+        "1 1/2 cups quick oatmeal - uncooked (or use old fashioned oats for more oatmeal texture)",
+        "2/3 cup unsweetened applesauce",
+        "1 tsp vanilla extract",
+        "1 scoop vanilla protein powder ** (can be made without, cookie will just be lower in protein)"
+      ],
+      "recipe": [
+        "Preheat heat oven to 350 degrees.In a large bowl, mix mashed banana & peanut butter until completely combined then add in the applesauce, vanilla protein powder & the extract(s) ~ mix again until all are completely combined.",
+        "Add in the oatmeal & nuts to the banana mixture & combine. (** add the optional carob / chocolate chips at this time if you want them mixed throughout)",
+        "Let dough rest for 10 minutes.Drop cookie dough, by spoonfuls, onto a parchment paper lined cookie sheet & flatten cookies into circles. (** if you just want the carob / chocolate chips on the top of the cookies, add now)",
+        "Bake cookies approx. 20-30 minutes (some like their cookies less cooked, some cooked more - try it both ways to find which works best for your tastes) or until golden brown & done.",
+        "Remove from oven & let rest on cookie sheet for 5 minutes, then move to cooling rack. (if you want the traditional fork tong marks on the cookies, use a pizza cutter or sharp knife to score the tops of the cookies while they're still warm)When cookies are completely cool, store in a covered container. Enjoy!...or with a cuppa tea."
+      ],
+      "image": "https://img.spoonacular.com/recipes/945221-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 945221
+    },
+    {
+      "name": "Easy Homemade Apple Fritters",
+      "calories": 148,
+      "protein": 2,
+      "carbs": 34,
+      "fat": 1,
+      "time": "30 min",
+      "category": "Café da Manhã",
+      "ingredients": [
+        "1 cup all purpose flour",
+        "1 cup chopped apple",
+        "1 1/2 teaspoons baking powder",
+        "1 teaspoon cinnamon",
+        "1 egg",
+        "1/3 cup milk",
+        "1 1/2 tablespoons milk",
+        "2 cups powdered sugar",
+        "3/4 teaspoon salt",
+        "1/4 cup sugar"
+      ],
+      "recipe": [
+        "Combine flour, sugar, salt, baking powder, cinnamon. Stir in milk and egg until just combined. Fold in apple.",
+        "Pour oil into skillet so that it is approximately 1 1/2 deep.",
+        "Heat oil on high. Oil is ready when a little dough thrown in floats to top. Carefully add dough to oil in heaping teaspoons. Cook until brown, about 2 minutes, then flip. Cook another 1-2 minutes, until both sides are browned.",
+        "Transfer briefly to paper towels to absorb excess oil, then transfer to cooling rack. Make glaze by stirring milk and powdered sugar together in a small bowl.",
+        "Drizzle over apple fritters. Wait approximately 3 minutes for glaze to harden, then flip fritters and drizzle glaze over the other side. Best served warm."
+      ],
+      "image": "https://img.spoonacular.com/recipes/775666-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 775666
+    },
+    {
+      "name": "Chicken/sweet Potato Roulade With Goat Cheese Sauce",
+      "calories": 231,
+      "protein": 20,
+      "carbs": 17,
+      "fat": 8,
+      "time": "45 min",
+      "category": "Almoço/Jantar",
+      "ingredients": [
+        "4 ounces chicken breast halves, filleted and pounding to ¼-inch thickness",
+        "1/2 cup warmed no salt added chicken broth",
+        "1 tablespoon fresh basil, chopped",
+        "2 ounces soft goat cheese",
+        "1/4 teaspoon fresh ground pepper",
+        "1/2 teaspoon kosher salt",
+        "1/2 medium onion, diced",
+        "salt and pepper to taste",
+        "1 teaspoon smoked Paprika",
+        "6 ounces baked sweet potato"
+      ],
+      "recipe": [
+        "Coat a skillet with non-stick spray and saute onion and basil until soft.",
+        "Add sweet potato and cook until warmed through.",
+        "Transfer to a food processor or blender and process until just blended.",
+        "Combine Paprika, salt and pepper in a a small bowl and rub over smooth side of chicken breast halves. Turn over, distribute sweet potato mixture between breasts and roll them tightly.Spray a skillet with non-stick and heat over medium-high heat.",
+        "Add chicken with the overlapping side down and cover. Turn regularly, cooking each side about 2 minutes.Meanwhile, whisk together warmed stock, goat cheese and salt and pepper to taste.Plate chicken, top with sauce and serve."
+      ],
+      "image": "https://img.spoonacular.com/recipes/638493-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 638493
+    },
+    {
+      "name": "Chipotle Chicken Soup",
+      "calories": 361,
+      "protein": 24,
+      "carbs": 44,
+      "fat": 5,
+      "time": "240 min",
+      "category": "Almoço/Jantar",
+      "ingredients": [
+        "1 can black beans, drained",
+        "1 can corn, drained",
+        "1 can rotel tomatoes, w/ liquid",
+        "4 cups chicken stock",
+        "3 inches chipotle peppers adobo sauce, finely minced (I have no idea what smoking does t",
+        "1 can fire roasted tomatoes, w/ liquid",
+        "1 onion, finely diced",
+        "1/2 jar roasted red peppers, diced (no liquid)",
+        "salt to taste",
+        "2 large, boneless, skinless chicken breasts, diced"
+      ],
+      "recipe": [
+        "Throw it all in the crock pot and let her cook on high for 4 hours or on low for",
+        "Easy peasy.Like taco or tortilla soup or chili, you can certainly serve this with sour cream and cheddar or pepper jack cheese.  As described here, sour cream was definitely necessary to cool down the heat of this soup."
+      ],
+      "image": "https://img.spoonacular.com/recipes/638746-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 638746
+    },
+    {
+      "name": "Ground Turkey Stuffed Peppers",
+      "calories": 463,
+      "protein": 34,
+      "carbs": 39,
+      "fat": 17,
+      "time": "45 min",
+      "category": "Almoço/Jantar",
+      "ingredients": [
+        "4 bell peppers (choose your favorite color!)",
+        "1 tsp black pepper",
+        "1 (8oz) can tomato sauce",
+        "1 (8oz) can diced tomatoes",
+        "2 tbsp dried parsley",
+        "2 eggs",
+        "1 tbsp minced garlic",
+        "1/2 lb ground beef",
+        "1/2 lb ground turkey",
+        "1 onion, diced"
+      ],
+      "recipe": [
+        "Cook rice then knead it together with remaining filling ingredients.",
+        "Cut tops off peppers and fill each one.",
+        "Place in your slow cooker or a large stove-top pot.",
+        "Mix together sauce ingredients. Top each stuffed pepper with sauce and pour remaining sauce all around the stuffed peppers. Cook on medium/low for about an hour. Top with grated parmesan cheese and a little parsley for looks and serve warm."
+      ],
+      "image": "https://img.spoonacular.com/recipes/645978-556x370.jpg",
+      "source": "Spoonacular",
+      "recipe_id": 645978
+    },
+    {
+      "name": "Turkish Baharat Meatballs with Lentil Pilaf",
+      "calories": 519,
+      "protein": 18,
+      "carbs": 44,
+      "fat": 27,
+      "time": "45 min",
+      "category": "Almoço/Jantar",
+      "ingredients": [
+        "1 rasher bacon, rind removed, very finely chopped",
+        "1 tsp baharat spice mix*",
+        "1 ½ cups basmati rice",
+        "½ tsp black pepper, cracked",
+        "1 can chopped tomatoes",
+        "1 small courgette, coarsely chopped",
+        "½ tsp cumin",
+        "2 Tbs dry savoury",
+        "1 egg",
+        "½ cup of flour"
+      ],
+      "recipe": [
+        "Place onion, capsicum and garlic in a medium-large saucepan with some olive oil to saute for 2 minutes.",
+        "Add mushrooms and courgette, stir.",
+        "Add the tomatoes and the spices, cover and simmer on low heat for 10 minutes.meanwhile combine all the meatball ingredients in a large bowl and mix until smooth.Using a tablespoon, scoop out a measure of meat and roll into a ball with your hands. Repeat until youve used all the meat.",
+        "Place the meatballs in the saucepan, then cover and leave to simmer for about 15 minutes. Just before youre ready to serve, uncover the saucepan and increase the heat to reduce the sauce to the desired thickness.For the lentil pilaf bring the water to boil, then add the remaining ingredients, stir, cover and reduce heat to low. Allow to cook for at least 20 minutes before lifting the lid to check consistency. When done, all the liquid should have been absorbed by the rice/lentils, which should be soft.",
+        "Serve the meatballs and the sauce on a bed of the lentil rice with a big dollop of yoghurt."
+      ],
+      "image": "https://img.spoonacular.com/recipes/664087-556x370.",
+      "source": "Spoonacular",
+      "recipe_id": 664087
+    }
+  ]
+}
