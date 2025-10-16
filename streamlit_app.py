@@ -814,7 +814,7 @@ MEALS_DATABASE = {
         # JANTAR - MANTER PESO
         {
             "name": "Frango com Batata Doce",
-            "calories": 480,
+            "calories": 430,
             "protein": 35,
             "carbs": 45,
             "fat": 12,
@@ -1451,7 +1451,7 @@ MEALS_DATABASE = {
             ]
         },
         {
-            "name": "Salmão com Quinoa",
+            "name": "Salmão com Quinoa Mediterrâneo",
             "calories": 650,
             "protein": 38,
             "carbs": 48,
@@ -1620,7 +1620,7 @@ MEALS_DATABASE = {
             ]
         },
         {
-            "name": "Torrada de Abacate com Ovo e Amendoim",
+            "name": "Torrada de Abacate com Amendoim e Granola",
             "calories": 480,
             "protein": 20,
             "carbs": 52,
@@ -2535,6 +2535,8 @@ def get_meal_image(meal_name, category):
         "Frango com Batata Doce": "https://images.unsplash.com/photo-1598511726623-d2e9996892f0?w=800&q=80",
         "Picanha com Batata": "https://images.unsplash.com/photo-1558030006-450675393462?w=800&q=80",
         "Salmão com Quinoa": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
+        "Salmão com Quinoa Mediterrâneo": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
+        "Torrada de Abacate com Amendoim e Granola": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800&q=80",
         "Picanha com Batata Completa": "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80",
         "Carne com Arroz e Feijão": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800&q=80",
         "Wrap de Frango": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800&q=80",
