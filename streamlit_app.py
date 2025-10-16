@@ -1789,6 +1789,566 @@ MEALS_DATABASE = {
     ]
 }
 
+# Receitas específicas para restrições alimentares
+DIETARY_MEALS = {
+    "vegetarian": {
+        "lose": [
+            {
+                "name": "Salada de Quinoa com Grão e Vegetais",
+                "calories": 285,
+                "protein": 12,
+                "carbs": 42,
+                "fat": 8,
+                "time": "20 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "1/2 xícara de quinoa cozida",
+                    "1/2 xícara de grão-de-bico cozido",
+                    "1 tomate picado",
+                    "1/2 pepino picado",
+                    "Folhas de espinafre",
+                    "1 colher de sopa de azeite",
+                    "Sumo de limão",
+                    "Hortelã fresca"
+                ],
+                "recipe": [
+                    "Cozinhe a quinoa em água com sal por 15 minutos.",
+                    "Escorra e deixe esfriar.",
+                    "Numa tigela, misture a quinoa com o grão-de-bico.",
+                    "Adicione o tomate, pepino e espinafre picados.",
+                    "Tempere com azeite, sumo de limão, sal e pimenta.",
+                    "Misture bem todos os ingredientes.",
+                    "Finalize com hortelã fresca picada.",
+                    "Sirva fria ou à temperatura ambiente."
+                ],
+                "dietary": ["vegetarian"]
+            },
+            {
+                "name": "Sopa Cremosa de Lentilhas e Cenoura",
+                "calories": 195,
+                "protein": 11,
+                "carbs": 32,
+                "fat": 3,
+                "time": "35 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "1 xícara de lentilhas vermelhas",
+                    "2 cenouras médias",
+                    "1 cebola picada",
+                    "2 dentes de alho",
+                    "1 colher de chá de cominho",
+                    "500ml de caldo de legumes",
+                    "1 colher de sopa de azeite",
+                    "Coentros frescos"
+                ],
+                "recipe": [
+                    "Numa panela, refogue a cebola e alho em azeite.",
+                    "Adicione as cenouras cortadas em rodelas.",
+                    "Junte as lentilhas e o cominho.",
+                    "Adicione o caldo de legumes e deixe ferver.",
+                    "Cozinhe em lume médio por 25 minutos.",
+                    "Triture com varinha mágica até ficar cremoso.",
+                    "Ajuste o tempero com sal e pimenta.",
+                    "Sirva quente com coentros frescos."
+                ],
+                "dietary": ["vegetarian", "gluten_free"]
+            },
+            {
+                "name": "Tofu Salteado com Brócolos e Gengibre",
+                "calories": 245,
+                "protein": 18,
+                "carbs": 12,
+                "fat": 14,
+                "time": "20 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "200g de tofu firme",
+                    "200g de brócolos",
+                    "1 colher de sopa de gengibre ralado",
+                    "2 dentes de alho picados",
+                    "2 colheres de sopa de molho de soja",
+                    "1 colher de sopa de óleo de sésamo",
+                    "Sementes de sésamo",
+                    "Cebolinho picado"
+                ],
+                "recipe": [
+                    "Corte o tofu em cubos e seque bem.",
+                    "Numa frigideira ou wok, aqueça o óleo de sésamo.",
+                    "Doure o tofu por todos os lados e reserve.",
+                    "Na mesma frigideira, salteie o alho e gengibre.",
+                    "Adicione os brócolos e cozinhe por 5 minutos.",
+                    "Volte o tofu para a frigideira.",
+                    "Adicione o molho de soja e misture bem.",
+                    "Finalize com sementes de sésamo e cebolinho."
+                ],
+                "dietary": ["vegetarian"]
+            }
+        ],
+        "maintain": [
+            {
+                "name": "Risotto de Cogumelos e Espinafres",
+                "calories": 420,
+                "protein": 14,
+                "carbs": 62,
+                "fat": 13,
+                "time": "40 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "1 xícara de arroz arbório",
+                    "200g de cogumelos variados",
+                    "2 xícaras de espinafres frescos",
+                    "1 cebola pequena",
+                    "100ml de vinho branco",
+                    "800ml de caldo de legumes quente",
+                    "50g de queijo parmesão",
+                    "2 colheres de sopa de azeite"
+                ],
+                "recipe": [
+                    "Refogue a cebola picada em azeite até ficar transparente.",
+                    "Adicione os cogumelos fatiados e cozinhe por 5 min.",
+                    "Junte o arroz e mexa por 2 minutos.",
+                    "Adicione o vinho branco e deixe evaporar.",
+                    "Vá adicionando o caldo aos poucos, mexendo sempre.",
+                    "Quando o arroz estiver quase cozido, adicione os espinafres.",
+                    "Finalize com queijo parmesão ralado.",
+                    "Sirva imediatamente."
+                ],
+                "dietary": ["vegetarian", "gluten_free"]
+            },
+            {
+                "name": "Caril de Grão-de-Bico e Batata-Doce",
+                "calories": 385,
+                "protein": 13,
+                "carbs": 58,
+                "fat": 11,
+                "time": "35 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "1 lata de grão-de-bico escorrido",
+                    "1 batata-doce média",
+                    "1 lata de tomate pelado",
+                    "200ml de leite de coco",
+                    "1 cebola picada",
+                    "2 colheres de chá de caril em pó",
+                    "1 colher de chá de cominho",
+                    "Coentros frescos"
+                ],
+                "recipe": [
+                    "Corte a batata-doce em cubos médios.",
+                    "Refogue a cebola até dourar.",
+                    "Adicione o caril e cominho, mexa por 1 minuto.",
+                    "Junte a batata-doce e o tomate pelado.",
+                    "Adicione 100ml de água e cozinhe por 15 minutos.",
+                    "Acrescente o grão-de-bico e leite de coco.",
+                    "Cozinhe mais 10 minutos até engrossar.",
+                    "Finalize com coentros frescos picados."
+                ],
+                "dietary": ["vegetarian", "gluten_free"]
+            },
+            {
+                "name": "Wrap Vegetariano com Húmus e Falafel",
+                "calories": 445,
+                "protein": 16,
+                "carbs": 54,
+                "fat": 18,
+                "time": "25 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "2 tortilhas integrais",
+                    "4 bolinhos de falafel",
+                    "3 colheres de sopa de húmus",
+                    "Alface romana",
+                    "Tomate em rodelas",
+                    "Pepino fatiado",
+                    "Cebola roxa",
+                    "Molho de iogurte (opcional)"
+                ],
+                "recipe": [
+                    "Aqueça os falafels no forno a 180°C por 10 min.",
+                    "Aqueça ligeiramente as tortilhas.",
+                    "Espalhe o húmus sobre cada tortilha.",
+                    "Adicione alface, tomate e pepino.",
+                    "Coloque os falafels no centro.",
+                    "Adicione cebola roxa fatiada.",
+                    "Regue com molho de iogurte se desejar.",
+                    "Enrole firmemente e corte ao meio."
+                ],
+                "dietary": ["vegetarian"]
+            }
+        ],
+        "gain": [
+            {
+                "name": "Lasanha Vegetariana de Beringela e Ricotta",
+                "calories": 520,
+                "protein": 24,
+                "carbs": 48,
+                "fat": 24,
+                "time": "60 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "8 folhas de massa para lasanha",
+                    "2 beringelas médias",
+                    "400g de ricotta",
+                    "400g de molho de tomate",
+                    "200g de queijo mozzarella",
+                    "50g de queijo parmesão",
+                    "Manjericão fresco",
+                    "Azeite"
+                ],
+                "recipe": [
+                    "Corte as beringelas em fatias e grelhe com azeite.",
+                    "Cozinhe a massa de lasanha conforme instruções.",
+                    "Misture a ricotta com manjericão picado.",
+                    "Numa assadeira, alterne camadas de massa, beringela, ricotta e molho.",
+                    "Repita as camadas até acabar os ingredientes.",
+                    "Cubra com mozzarella e parmesão ralados.",
+                    "Leve ao forno a 180°C por 35-40 minutos.",
+                    "Deixe repousar 10 minutos antes de servir."
+                ],
+                "dietary": ["vegetarian"]
+            },
+            {
+                "name": "Bowl de Quinoa com Abacate e Ovo Escalfado",
+                "calories": 485,
+                "protein": 22,
+                "carbs": 46,
+                "fat": 22,
+                "time": "25 min",
+                "category": "Café da Manhã",
+                "ingredients": [
+                    "1 xícara de quinoa cozida",
+                    "1 abacate maduro",
+                    "2 ovos",
+                    "1/2 xícara de tomate cereja",
+                    "Espinafres baby",
+                    "2 colheres de sopa de sementes variadas",
+                    "Azeite e limão",
+                    "Sal e pimenta"
+                ],
+                "recipe": [
+                    "Cozinhe a quinoa em água com sal.",
+                    "Escalfe os ovos em água com vinagre.",
+                    "Numa bowl, coloque a quinoa como base.",
+                    "Adicione espinafres frescos e tomate cereja.",
+                    "Coloque fatias de abacate ao lado.",
+                    "Posicione os ovos escalfados por cima.",
+                    "Polvilhe com sementes variadas.",
+                    "Tempere com azeite, limão, sal e pimenta."
+                ],
+                "dietary": ["vegetarian", "gluten_free"]
+            },
+            {
+                "name": "Smoothie Bowl Proteico com Manteiga de Amendoim",
+                "calories": 545,
+                "protein": 26,
+                "carbs": 62,
+                "fat": 22,
+                "time": "10 min",
+                "category": "Café da Manhã",
+                "ingredients": [
+                    "2 bananas congeladas",
+                    "1 xícara de leite de soja",
+                    "3 colheres de sopa de manteiga de amendoim",
+                    "2 colheres de sopa de whey protein vegetal",
+                    "Granola",
+                    "Frutos vermelhos",
+                    "Sementes de chia",
+                    "Amêndoas laminadas"
+                ],
+                "recipe": [
+                    "No liquidificador, bata as bananas congeladas.",
+                    "Adicione o leite de soja e a manteiga de amendoim.",
+                    "Junte o whey protein e bata até ficar cremoso.",
+                    "Despeje numa bowl.",
+                    "Decore com granola, frutos vermelhos.",
+                    "Adicione sementes de chia.",
+                    "Finalize com amêndoas laminadas.",
+                    "Sirva imediatamente."
+                ],
+                "dietary": ["vegetarian"]
+            }
+        ]
+    },
+    "gluten_free": {
+        "lose": [
+            {
+                "name": "Salada de Atum com Feijão Branco e Rúcula",
+                "calories": 295,
+                "protein": 28,
+                "carbs": 24,
+                "fat": 9,
+                "time": "15 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "1 lata de atum ao natural",
+                    "1 xícara de feijão branco cozido",
+                    "2 xícaras de rúcula fresca",
+                    "1/2 cebola roxa fatiada",
+                    "Tomate cereja",
+                    "1 colher de sopa de azeite",
+                    "Vinagre balsâmico",
+                    "Sal e pimenta"
+                ],
+                "recipe": [
+                    "Escorra bem o atum e desfie com um garfo.",
+                    "Lave a rúcula e seque bem.",
+                    "Numa bowl, misture a rúcula com o feijão branco.",
+                    "Adicione o atum desfiado.",
+                    "Junte a cebola roxa e tomates cereja cortados ao meio.",
+                    "Tempere com azeite, vinagre balsâmico, sal e pimenta.",
+                    "Misture delicadamente.",
+                    "Sirva imediatamente."
+                ],
+                "dietary": ["gluten_free"]
+            },
+            {
+                "name": "Omelete de Claras com Cogumelos e Espargos",
+                "calories": 185,
+                "protein": 22,
+                "carbs": 8,
+                "fat": 7,
+                "time": "15 min",
+                "category": "Café da Manhã",
+                "ingredients": [
+                    "4 claras de ovo",
+                    "1 ovo inteiro",
+                    "100g de cogumelos frescos",
+                    "6 espargos verdes",
+                    "1 colher de chá de azeite",
+                    "Cebolinho picado",
+                    "Sal e pimenta",
+                    "Ervas finas"
+                ],
+                "recipe": [
+                    "Corte os espargos em pedaços de 2cm.",
+                    "Fatie os cogumelos.",
+                    "Numa frigideira, salteie os cogumelos e espargos.",
+                    "Bata as claras com o ovo inteiro.",
+                    "Tempere com sal, pimenta e ervas.",
+                    "Despeje os ovos sobre os vegetais.",
+                    "Cozinhe em lume baixo até firmar.",
+                    "Finalize com cebolinho picado."
+                ],
+                "dietary": ["gluten_free"]
+            },
+            {
+                "name": "Ceviche de Peixe Branco com Batata-Doce",
+                "calories": 265,
+                "protein": 26,
+                "carbs": 28,
+                "fat": 5,
+                "time": "20 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "300g de peixe branco fresco",
+                    "1 batata-doce pequena cozida",
+                    "Sumo de 3 limões",
+                    "1 cebola roxa",
+                    "Coentros frescos",
+                    "1 malagueta (opcional)",
+                    "Sal e pimenta",
+                    "Milho cozido"
+                ],
+                "recipe": [
+                    "Corte o peixe em cubos pequenos.",
+                    "Coloque numa tigela de vidro.",
+                    "Cubra com sumo de limão e sal.",
+                    "Deixe marinar no frio por 15 minutos.",
+                    "Adicione cebola roxa fatiada finamente.",
+                    "Misture coentros picados.",
+                    "Sirva acompanhado de batata-doce em rodelas.",
+                    "Decore com milho cozido."
+                ],
+                "dietary": ["gluten_free"]
+            }
+        ],
+        "maintain": [
+            {
+                "name": "Frango Grelhado com Batata-Doce Assada e Brócolos",
+                "calories": 445,
+                "protein": 38,
+                "carbs": 42,
+                "fat": 12,
+                "time": "40 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "200g de peito de frango",
+                    "1 batata-doce grande",
+                    "200g de brócolos",
+                    "2 colheres de sopa de azeite",
+                    "1 colher de chá de páprica",
+                    "Alho em pó",
+                    "Tomilho fresco",
+                    "Sal e pimenta"
+                ],
+                "recipe": [
+                    "Pré-aqueça o forno a 200°C.",
+                    "Corte a batata-doce em cubos e tempere com azeite e páprica.",
+                    "Asse a batata-doce por 30 minutos.",
+                    "Tempere o frango com alho, tomilho, sal e pimenta.",
+                    "Grelhe o frango numa frigideira por 6-7 minutos de cada lado.",
+                    "Cozinhe os brócolos no vapor por 5 minutos.",
+                    "Monte o prato com frango, batata-doce e brócolos.",
+                    "Regue com um fio de azeite."
+                ],
+                "dietary": ["gluten_free"]
+            },
+            {
+                "name": "Arroz de Pato com Cenoura e Courgette",
+                "calories": 485,
+                "protein": 32,
+                "carbs": 52,
+                "fat": 14,
+                "time": "45 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "200g de pato desfiado",
+                    "1 xícara de arroz integral",
+                    "1 cenoura ralada",
+                    "1 courgette em cubos",
+                    "1 cebola picada",
+                    "2 dentes de alho",
+                    "Caldo de frango",
+                    "Salsa fresca"
+                ],
+                "recipe": [
+                    "Refogue a cebola e alho em um pouco de gordura de pato.",
+                    "Adicione a cenoura e courgette, refogue por 3 minutos.",
+                    "Junte o arroz e mexa bem.",
+                    "Adicione o pato desfiado.",
+                    "Cubra com caldo de frango (2 xícaras).",
+                    "Cozinhe em lume brando por 35 minutos.",
+                    "Ajuste o tempero com sal e pimenta.",
+                    "Finalize com salsa fresca picada."
+                ],
+                "dietary": ["gluten_free"]
+            },
+            {
+                "name": "Tacos de Peixe com Tortilhas de Milho",
+                "calories": 425,
+                "protein": 30,
+                "carbs": 44,
+                "fat": 14,
+                "time": "25 min",
+                "category": "Jantar",
+                "ingredients": [
+                    "300g de peixe branco",
+                    "4 tortilhas de milho",
+                    "Repolho roxo ralado",
+                    "1 abacate",
+                    "Molho de iogurte e lima",
+                    "Coentros frescos",
+                    "Lima",
+                    "Cominho e páprica"
+                ],
+                "recipe": [
+                    "Tempere o peixe com cominho, páprica, sal e pimenta.",
+                    "Grelhe o peixe por 4 minutos de cada lado.",
+                    "Aqueça as tortilhas de milho.",
+                    "Desfie o peixe em lascas.",
+                    "Monte os tacos: tortilha, repolho, peixe.",
+                    "Adicione fatias de abacate.",
+                    "Regue com molho de iogurte e lima.",
+                    "Finalize com coentros e uma rodela de lima."
+                ],
+                "dietary": ["gluten_free"]
+            }
+        ],
+        "gain": [
+            {
+                "name": "Bife de Vaca com Arroz Integral e Ovo Estrelado",
+                "calories": 625,
+                "protein": 48,
+                "carbs": 54,
+                "fat": 22,
+                "time": "30 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "200g de bife de vaca",
+                    "1 xícara de arroz integral cozido",
+                    "2 ovos",
+                    "1 tomate fatiado",
+                    "Alface",
+                    "2 colheres de sopa de azeite",
+                    "Alho e salsa",
+                    "Sal e pimenta"
+                ],
+                "recipe": [
+                    "Tempere o bife com alho, sal e pimenta.",
+                    "Grelhe o bife ao ponto desejado (3-4 min cada lado).",
+                    "Deixe o bife descansar por 5 minutos.",
+                    "Frite os ovos estrelados em azeite.",
+                    "Aqueça o arroz integral.",
+                    "Monte o prato: arroz, bife, ovos estrelados.",
+                    "Acompanhe com tomate e alface.",
+                    "Finalize com salsa picada."
+                ],
+                "dietary": ["gluten_free"]
+            },
+            {
+                "name": "Salmão com Puré de Batata-Doce e Espinafres Salteados",
+                "calories": 575,
+                "protein": 42,
+                "carbs": 48,
+                "fat": 22,
+                "time": "35 min",
+                "category": "Jantar",
+                "ingredients": [
+                    "200g de filete de salmão",
+                    "2 batatas-doces médias",
+                    "200g de espinafres frescos",
+                    "50ml de leite",
+                    "2 colheres de sopa de manteiga",
+                    "2 dentes de alho",
+                    "Sumo de limão",
+                    "Sal e pimenta"
+                ],
+                "recipe": [
+                    "Cozinhe as batatas-doces até ficarem macias.",
+                    "Faça um puré com leite e 1 colher de manteiga.",
+                    "Tempere o salmão com sal, pimenta e limão.",
+                    "Grelhe o salmão por 4-5 minutos de cada lado.",
+                    "Salteie os espinafres com alho e manteiga.",
+                    "Monte o prato: puré, espinafres, salmão.",
+                    "Regue o salmão com um fio de azeite.",
+                    "Sirva quente."
+                ],
+                "dietary": ["gluten_free"]
+            },
+            {
+                "name": "Bowl de Quinoa com Frango, Abacate e Amêndoas",
+                "calories": 595,
+                "protein": 44,
+                "carbs": 52,
+                "fat": 24,
+                "time": "30 min",
+                "category": "Almoço/Jantar",
+                "ingredients": [
+                    "200g de peito de frango",
+                    "1 xícara de quinoa cozida",
+                    "1 abacate",
+                    "50g de amêndoas laminadas",
+                    "Tomate cereja",
+                    "Rúcula",
+                    "2 colheres de sopa de azeite",
+                    "Vinagre balsâmico"
+                ],
+                "recipe": [
+                    "Tempere e grelhe o frango até dourar.",
+                    "Deixe descansar e corte em tiras.",
+                    "Cozinhe a quinoa e deixe esfriar.",
+                    "Numa bowl, coloque a quinoa como base.",
+                    "Adicione rúcula fresca e tomate cereja.",
+                    "Coloque as tiras de frango.",
+                    "Adicione fatias de abacate e amêndoas.",
+                    "Tempere com azeite e vinagre balsâmico."
+                ],
+                "dietary": ["gluten_free"]
+            }
+        ]
+    }
+}
+
 # Funções de cálculo
 def calculate_bmr(sex, age, weight, height):
     """Calculate Basal Metabolic Rate using Mifflin-St Jeor formula."""
@@ -1894,9 +2454,32 @@ def check_goal_alignment(bmi, goal):
     
     return category, warnings
 
-def get_meal_suggestions(goal, target_calories, num_meals=3):
-    """Get personalized meal suggestions based on goal and calories."""
-    meals = MEALS_DATABASE.get(goal, MEALS_DATABASE["maintain"])
+def get_meal_suggestions(goal, target_calories, dietary_restriction="none", num_meals=3):
+    """Get personalized meal suggestions based on goal, calories and dietary restrictions."""
+    
+    # Se tiver restrição alimentar, usar receitas específicas
+    if dietary_restriction != "none":
+        meals = DIETARY_MEALS.get(dietary_restriction, {}).get(goal, [])
+        # Se não houver receitas suficientes para a restrição, complementar com receitas normais compatíveis
+        if len(meals) < num_meals:
+            normal_meals = MEALS_DATABASE.get(goal, MEALS_DATABASE["maintain"])
+            # Para vegetariano, filtrar receitas sem carne/peixe
+            if dietary_restriction == "vegetarian":
+                # Adicionar receitas do DIETARY_MEALS que também são gluten_free e vegetarian
+                for dietary_type in DIETARY_MEALS:
+                    for meal in DIETARY_MEALS[dietary_type].get(goal, []):
+                        if "vegetarian" in meal.get("dietary", []) and meal not in meals:
+                            meals.append(meal)
+            # Para gluten_free, adicionar receitas compatíveis
+            elif dietary_restriction == "gluten_free":
+                for dietary_type in DIETARY_MEALS:
+                    for meal in DIETARY_MEALS[dietary_type].get(goal, []):
+                        if "gluten_free" in meal.get("dietary", []) and meal not in meals:
+                            meals.append(meal)
+    else:
+        # Sem restrições, usar receitas normais
+        meals = MEALS_DATABASE.get(goal, MEALS_DATABASE["maintain"])
+    
     calories_per_meal = target_calories / num_meals
     
     # Filter meals that fit within ±100 calories of target per meal
@@ -2282,8 +2865,8 @@ def main():
         """, unsafe_allow_html=True)
         
         # Instrução para preencher o formulário
-        st.markdown("---")
-        st.markdown("### 👈🏽 Para fazeres magia, preenche as tuas informações do lado esquerdo")
+    st.markdown("---")
+    st.markdown("### 👈🏽 Para fazeres magia, preenche as tuas informações do lado esquerdo")
     
     # Sidebar para informações pessoais
     with st.sidebar:
@@ -2312,6 +2895,17 @@ def main():
                               "maintain": "Manter peso", 
                               "gain": "Ganhar peso"
                           }[x])
+        
+        dietary_restriction = st.selectbox(
+            "Restrições Alimentares",
+            ["none", "vegetarian", "gluten_free"],
+            format_func=lambda x: {
+                "none": "Sem restrições",
+                "vegetarian": "Vegetariano",
+                "gluten_free": "Sem glúten (Gluten-Free)"
+            }[x],
+            help="Seleciona as tuas restrições alimentares para receitas personalizadas"
+        )
         
         calculate_button = st.button("🧮 Calcular as Minhas Calorias", type="primary")
     
@@ -2345,7 +2939,8 @@ def main():
             'goal': goal,
             'bmi': bmi,
             'bmi_category': bmi_category,
-            'warnings': warnings
+            'warnings': warnings,
+            'dietary_restriction': dietary_restriction
         }
     
     # Display results if calculated
@@ -2412,7 +3007,11 @@ def main():
         st.write(f"Baseado no teu objectivo de **{objetivo_text}** peso e **{results['daily_calories']:.0f}** calorias diárias")
         
         # Get meal suggestions
-        suggested_meals = get_meal_suggestions(results['goal'], results['daily_calories'])
+        suggested_meals = get_meal_suggestions(
+            results['goal'], 
+            results['daily_calories'],
+            results.get('dietary_restriction', 'none')
+        )
         
         # Display meals
         for meal in suggested_meals:
