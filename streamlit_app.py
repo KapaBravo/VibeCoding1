@@ -1658,17 +1658,20 @@ def get_meal_image(meal_name, category):
 def display_meal_card(meal):
     """Exibe um cartão de refeição com todos os detalhes e imagem."""
     with st.expander(f"🍽️ {meal['name']} - {meal['calories']} kcal", expanded=False):
-        # Imagem da refeição
-        meal_image_url = get_meal_image(meal['name'], meal['category'])
-        st.image(meal_image_url, use_container_width=True)
+        # Layout com imagem e informações lado a lado
+        img_col, info_col = st.columns([1, 2])
         
-        st.markdown("<br>", unsafe_allow_html=True)
+        with img_col:
+            # Imagem da refeição mais pequena
+            meal_image_url = get_meal_image(meal['name'], meal['category'])
+            st.image(meal_image_url, use_container_width=True)
         
-        col1, col2 = st.columns([2, 1])
-        
-        with col1:
+        with info_col:
             st.write(f"**Categoria:** {meal['category']}")
             st.write(f"**Tempo de Preparação:** {meal['time']}")
+            st.metric("Calorias", f"{meal['calories']}")
+        
+        st.markdown("<br>", unsafe_allow_html=True)
             
             # Macros
             st.write("**Macronutrientes:**")
@@ -1676,12 +1679,10 @@ def display_meal_card(meal):
             with col_macro1:
                 st.metric("Proteína", f"{meal['protein']}g")
             with col_macro2:
-                st.metric("Hidratos", f"{meal['carbs']}g")
+            st.metric("Hidratos", f"{meal['carbs']}g")
             with col_macro3:
                 st.metric("Gordura", f"{meal['fat']}g")
         
-        with col2:
-            st.metric("Calorias", f"{meal['calories']}")
         
         # Ingredients
         st.write("**Ingredientes:**")
