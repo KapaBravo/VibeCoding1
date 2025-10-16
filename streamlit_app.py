@@ -219,9 +219,175 @@ def display_meal_card(meal):
         for i, step in enumerate(meal['recipe'], 1):
             st.write(f"{i}. {step}")
 
+# CSS para o header personalizado
+def add_custom_css():
+    st.markdown("""
+    <style>
+    .header-container {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 1.5rem 2rem;
+        margin: -1rem -1rem 2rem -1rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 12px 12px;
+    }
+    
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #667eea;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .brand-info h1 {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .brand-info p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.875rem;
+        margin: 0;
+    }
+    
+    .app-title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    
+    .dumbbell-icon {
+        font-size: 1.5rem;
+    }
+    
+    /* Melhorar o design dos cards */
+    .main .block-container {
+        padding-top: 2rem;
+    }
+    
+    .stMetric {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    
+    .stExpander {
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1rem;
+    }
+    
+    .stExpander > div {
+        background: white;
+        border-radius: 12px;
+    }
+    
+    .stButton > button {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    
+    .stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+    
+    .stSuccess {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        border: none;
+        border-radius: 12px;
+        color: white;
+    }
+    
+    .stInfo {
+        background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        border: none;
+        border-radius: 12px;
+        color: white;
+    }
+    
+    /* Sidebar styling */
+    .css-1d391kg {
+        background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+    
+    @media (max-width: 768px) {
+        .header-content {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+        
+        .logo-section {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+def create_header():
+    st.markdown("""
+    <div class="header-container">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">💪</div>
+                <div class="brand-info">
+                    <h1>Luis Ferreira</h1>
+                    <p>Personal Trainer</p>
+                </div>
+            </div>
+            <div class="app-title">
+                <span class="dumbbell-icon">🏋️</span>
+                <span>Calculadora Fitness</span>
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
 # Interface principal
 def main():
-    st.title("🍎 Calculadora de Calorias & Sugestões de Refeições")
+    # Adicionar CSS personalizado
+    add_custom_css()
+    
+    # Criar header personalizado
+    create_header()
+    
+    # Título principal (mais discreto agora)
+    st.markdown("### 🍎 Calculadora de Calorias & Sugestões de Refeições")
     st.markdown("---")
     
     # Sidebar para informações pessoais
@@ -330,6 +496,29 @@ def main():
         # Botão para gerar novas sugestões
         if st.button("🔄 Gerar Novas Sugestões de Refeições"):
             st.rerun()
+    
+    # Footer personalizado
+    create_footer()
+
+def create_footer():
+    st.markdown("---")
+    st.markdown("""
+    <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); margin: 2rem -1rem -1rem -1rem; border-radius: 12px 12px 0 0;">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+            <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">💪</div>
+            <div>
+                <h3 style="margin: 0; color: #1f2937; font-size: 1.1rem;">Luis Ferreira</h3>
+                <p style="margin: 0; color: #6b7280; font-size: 0.9rem;">Personal Trainer</p>
+            </div>
+        </div>
+        <p style="color: #6b7280; font-size: 0.9rem; margin: 0;">
+            Desenvolvido com ❤️ para ajudar você a alcançar seus objetivos fitness
+        </p>
+        <p style="color: #9ca3af; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
+            © 2024 - Todos os direitos reservados
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
 
 # Run the app
 if __name__ == "__main__":
