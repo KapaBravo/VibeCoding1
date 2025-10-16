@@ -1574,6 +1574,64 @@ def calculate_macros(calories, weight):
     
     return protein_grams, fat_grams, carb_grams
 
+def calculate_bmi(weight, height):
+    """Calcula o IMC (Índice de Massa Corporal)."""
+    height_m = height / 100  # Converter cm para metros
+    bmi = weight / (height_m ** 2)
+    return bmi
+
+def get_bmi_category(bmi):
+    """Retorna a categoria do IMC."""
+    if bmi < 18.5:
+        return "Abaixo do peso", "lose"
+    elif 18.5 <= bmi < 25:
+        return "Peso saudável", "maintain"
+    elif 25 <= bmi < 30:
+        return "Excesso de peso", "gain"
+    else:
+        return "Obesidade", "gain"
+
+def check_goal_alignment(bmi, goal):
+    """Verifica se o objetivo está alinhado com o IMC saudável."""
+    category, recommended_goal = get_bmi_category(bmi)
+    
+    # Lógica de verificação
+    warnings = []
+    
+    if bmi < 18.5:  # Abaixo do peso
+        if goal == "lose":
+            warnings.append({
+                "type": "critical",
+                "message": "⚠️ **Atenção:** O teu IMC indica que estás **abaixo do peso saudável**. O objetivo de **perder peso** pode ser prejudicial para a tua saúde. Recomendamos **ganhar peso** de forma saudável."
+            })
+        elif goal == "maintain":
+            warnings.append({
+                "type": "warning",
+                "message": "⚠️ **Atenção:** O teu IMC indica que estás **abaixo do peso saudável**. Considera mudar o objetivo para **ganhar peso** para alcançares um peso mais saudável."
+            })
+    
+    elif 18.5 <= bmi < 25:  # Peso saudável
+        if goal in ["lose", "gain"]:
+            warnings.append({
+                "type": "info",
+                "message": f"ℹ️ **Informação:** O teu IMC está na faixa saudável. Tens a certeza que queres **{goal == 'lose' and 'perder' or 'ganhar'}** peso? Considera **manter** o peso actual."
+            })
+    
+    elif bmi >= 25:  # Excesso de peso ou obesidade
+        if goal == "gain":
+            severity = "critical" if bmi >= 30 else "warning"
+            warnings.append({
+                "type": severity,
+                "message": f"⚠️ **Atenção:** O teu IMC indica **{'obesidade' if bmi >= 30 else 'excesso de peso'}**. O objetivo de **ganhar peso** pode ser prejudicial para a tua saúde. Recomendamos **perder peso** de forma saudável."
+            })
+        elif goal == "maintain":
+            warnings.append({
+                "type": "warning",
+                "message": "⚠️ **Atenção:** O teu IMC indica excesso de peso. Considera mudar o objetivo para **perder peso** para alcançares um peso mais saudável."
+            })
+    
+    return category, warnings
+
 def get_meal_suggestions(goal, target_calories, num_meals=3):
     """Get personalized meal suggestions based on goal and calories."""
     meals = MEALS_DATABASE.get(goal, MEALS_DATABASE["maintain"])
@@ -2009,6 +2067,10 @@ def main():
         # Calculate macronutrients
         protein_grams, fat_grams, carb_grams = calculate_macros(daily_calories, weight)
         
+        # Calculate BMI and check goal alignment
+        bmi = calculate_bmi(weight, height)
+        bmi_category, warnings = check_goal_alignment(bmi, goal)
+        
         # Store results in session state
         st.session_state.calculated = True
         st.session_state.results = {
@@ -2018,17 +2080,31 @@ def main():
             'protein': protein_grams,
             'fat': fat_grams,
             'carbs': carb_grams,
-            'goal': goal
+            'goal': goal,
+            'bmi': bmi,
+            'bmi_category': bmi_category,
+            'warnings': warnings
         }
     
     # Display results if calculated
     if st.session_state.get('calculated', False):
         results = st.session_state.results
         
+        # Mostrar avisos primeiro, se existirem
+        if results.get('warnings'):
+            for warning in results['warnings']:
+                if warning['type'] == 'critical':
+                    st.error(warning['message'])
+                elif warning['type'] == 'warning':
+                    st.warning(warning['message'])
+                else:
+                    st.info(warning['message'])
+            st.markdown("---")
+        
         st.success("🎯 As Tuas Recomendações Calóricas Diárias")
         
-        # Métricas principais
-        col1, col2, col3, col4 = st.columns(4)
+        # Métricas principais incluindo IMC
+        col1, col2, col3, col4, col5 = st.columns(5)
         
         with col1:
             st.metric("Calorias Diárias", f"{results['daily_calories']:.0f}")
@@ -2037,6 +2113,15 @@ def main():
         with col3:
             st.metric("TDEE", f"{results['tdee']:.0f}")
         with col4:
+            # IMC com cor baseada na categoria
+            bmi_value = results.get('bmi', 0)
+            bmi_delta = None
+            if bmi_value < 18.5:
+                bmi_delta = "Abaixo"
+            elif bmi_value >= 25:
+                bmi_delta = "Acima"
+            st.metric("IMC", f"{bmi_value:.1f}", delta=results.get('bmi_category', ''))
+        with col5:
             objetivo_label = {
                 'lose': 'Perder',
                 'maintain': 'Manter',
