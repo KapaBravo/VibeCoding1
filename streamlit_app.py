@@ -1589,13 +1589,13 @@ def get_meal_suggestions(goal, target_calories, num_meals=3):
     return random.sample(suitable_meals, min(num_meals, len(suitable_meals)))
 
 def display_meal_card(meal):
-    """Display a meal card with all details."""
-    with st.expander(f"🍽️ {meal['name']} - {meal['calories']} cal", expanded=False):
+    """Exibe um cartão de refeição com todos os detalhes."""
+    with st.expander(f"🍽️ {meal['name']} - {meal['calories']} kcal", expanded=False):
         col1, col2 = st.columns([2, 1])
         
         with col1:
             st.write(f"**Categoria:** {meal['category']}")
-            st.write(f"**Tempo de preparo:** {meal['time']}")
+            st.write(f"**Tempo de Preparação:** {meal['time']}")
             
             # Macros
             st.write("**Macronutrientes:**")
@@ -1603,7 +1603,7 @@ def display_meal_card(meal):
             with col_macro1:
                 st.metric("Proteína", f"{meal['protein']}g")
             with col_macro2:
-                st.metric("Carboidratos", f"{meal['carbs']}g")
+                st.metric("Hidratos", f"{meal['carbs']}g")
             with col_macro3:
                 st.metric("Gordura", f"{meal['fat']}g")
         
@@ -1616,7 +1616,7 @@ def display_meal_card(meal):
             st.write(f"• {ingredient}")
         
         # Recipe
-        st.write("**Modo de preparo:**")
+        st.write("**Modo de Preparação:**")
         for i, step in enumerate(meal['recipe'], 1):
             st.write(f"{i}. {step}")
 
@@ -1793,7 +1793,7 @@ def main():
     
     # Sidebar para informações pessoais
     with st.sidebar:
-        st.header("📊 Suas Informações")
+        st.header("📊 As Tuas Informações")
         
         sex = st.selectbox("Sexo", ["M", "F"], help="M para Masculino, F para Feminino")
         age = st.number_input("Idade (anos)", min_value=1, max_value=120, value=25)
@@ -1801,25 +1801,25 @@ def main():
         height = st.number_input("Altura (cm)", min_value=50.0, max_value=300.0, value=170.0, step=0.1)
         
         activity_level = st.selectbox(
-            "Nível de Atividade",
+            "Nível de Actividade",
             [1, 2, 3, 4, 5],
             format_func=lambda x: {
                 1: "Sedentário (pouco ou nenhum exercício)",
-                2: "Ligeiramente ativo (exercício leve 1-3 dias/semana)",
-                3: "Moderadamente ativo (exercício moderado 3-5 dias/semana)",
-                4: "Muito ativo (exercício intenso 6-7 dias/semana)",
-                5: "Extremamente ativo (exercício muito intenso, trabalho físico)"
+                2: "Ligeiramente activo (exercício leve 1-3 dias/semana)",
+                3: "Moderadamente activo (exercício moderado 3-5 dias/semana)",
+                4: "Muito activo (exercício intenso 6-7 dias/semana)",
+                5: "Extremamente activo (exercício muito intenso, trabalho físico)"
             }[x]
         )
         
-        goal = st.selectbox("Objetivo", ["lose", "maintain", "gain"], 
+        goal = st.selectbox("Objectivo", ["lose", "maintain", "gain"], 
                           format_func=lambda x: {
                               "lose": "Perder peso",
                               "maintain": "Manter peso", 
                               "gain": "Ganhar peso"
                           }[x])
         
-        calculate_button = st.button("🧮 Calcular Minhas Calorias", type="primary")
+        calculate_button = st.button("🧮 Calcular as Minhas Calorias", type="primary")
     
     # Cálculos e resultados
     if calculate_button:
@@ -1851,7 +1851,7 @@ def main():
     if st.session_state.get('calculated', False):
         results = st.session_state.results
         
-        st.success("🎯 Suas Recomendações Calóricas Diárias")
+        st.success("🎯 As Tuas Recomendações Calóricas Diárias")
         
         # Métricas principais
         col1, col2, col3, col4 = st.columns(4)
@@ -1863,7 +1863,12 @@ def main():
         with col3:
             st.metric("TDEE", f"{results['tdee']:.0f}")
         with col4:
-            st.metric("Objetivo", results['goal'].title())
+            objetivo_label = {
+                'lose': 'Perder',
+                'maintain': 'Manter',
+                'gain': 'Ganhar'
+            }[results['goal']]
+            st.metric("Objectivo", objetivo_label)
         
         # Gráfico de macros
         st.subheader("📊 Distribuição de Macronutrientes")
@@ -1874,11 +1879,16 @@ def main():
         with col2:
             st.metric("Gordura", f"{results['fat']:.1f} g")
         with col3:
-            st.metric("Carboidratos", f"{results['carbs']:.1f} g")
+            st.metric("Hidratos de Carbono", f"{results['carbs']:.1f} g")
         
         # Sugestões de refeições
         st.subheader("🍽️ Sugestões de Refeições Personalizadas")
-        st.write(f"Baseado no seu objetivo de **{results['goal']}** peso e **{results['daily_calories']:.0f}** calorias diárias")
+        objetivo_text = {
+            'lose': 'perder',
+            'maintain': 'manter',
+            'gain': 'ganhar'
+        }[results['goal']]
+        st.write(f"Baseado no teu objectivo de **{objetivo_text}** peso e **{results['daily_calories']:.0f}** calorias diárias")
         
         # Get meal suggestions
         suggested_meals = get_meal_suggestions(results['goal'], results['daily_calories'])
@@ -1889,9 +1899,9 @@ def main():
         
         # Dica do personal trainer
         st.info("💡 **Dica do Personal Trainer:** " + {
-            'lose': "Para perda de peso, foque em proteínas magras e vegetais. Beba bastante água e mantenha consistência.",
-            'maintain': "Para manutenção, balance bem os macronutrientes e pratique exercícios regulares.",
-            'gain': "Para ganho de peso, aumente gradualmente as calorias e combine com treino de força."
+            'lose': "Para perda de peso, foca em proteínas magras e vegetais. Bebe bastante água e mantém consistência.",
+            'maintain': "Para manutenção, equilibra bem os macronutrientes e pratica exercícios regulares.",
+            'gain': "Para ganho de peso, aumenta gradualmente as calorias e combina com treino de força."
         }[results['goal']])
         
         # Botão para gerar novas sugestões
@@ -1913,7 +1923,7 @@ def create_footer():
             </div>
         </div>
         <p style="color: #6b7280; font-size: 0.9rem; margin: 0;">
-            Desenvolvido com ❤️ para ajudar você a alcançar seus objetivos fitness
+            Desenvolvido com ❤️ para te ajudar a alcançar os teus objectivos fitness
         </p>
         <p style="color: #9ca3af; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
             © 2024 - Todos os direitos reservados
