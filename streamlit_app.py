@@ -2292,7 +2292,7 @@ def main():
         sex = st.selectbox("Sexo", ["M", "F"], help="M para Masculino, F para Feminino")
         age = st.number_input("Idade (anos)", min_value=1, max_value=120, value=25)
         weight = st.number_input("Peso (kg)", min_value=1.0, max_value=500.0, value=70.0, step=0.1)
-        height = st.number_input("Altura (cm)", min_value=50.0, max_value=300.0, value=170.0, step=0.1)
+        height = st.number_input("Altura (cm)", min_value=50, max_value=300, value=170, step=1)
         
         activity_level = st.selectbox(
             "Nível de Actividade",
