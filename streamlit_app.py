@@ -1698,10 +1698,10 @@ def add_custom_css():
     st.markdown("""
     <style>
     .header-container {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
         padding: 1.5rem 2rem;
         margin: -1rem -1rem 2rem -1rem;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
         border-radius: 0 0 12px 12px;
     }
     
@@ -1785,7 +1785,7 @@ def add_custom_css():
     }
     
     .stButton > button {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
         color: white;
         border: none;
         border-radius: 8px;
@@ -1796,21 +1796,22 @@ def add_custom_css():
     
     .stButton > button:hover {
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
     }
     
     .stSuccess {
-        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-        border: none;
+        background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e0 100%);
+        border: 1px solid #a0aec0;
         border-radius: 12px;
-        color: white;
+        color: #1a202c;
     }
     
     .stInfo {
-        background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-        border: none;
+        background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+        border: 1px solid #cbd5e0;
         border-radius: 12px;
-        color: white;
+        color: #2d3748;
     }
     
     /* Sidebar styling */
@@ -1889,8 +1890,8 @@ def main():
     if not st.session_state.get('calculated', False):
         st.markdown("""
         <div style="text-align: center; padding: 2rem 0;">
-            <h2 style="color: #667eea; margin-bottom: 1.5rem;">🎯 Bem-vindo à Tua Calculadora Fitness!</h2>
-            <p style="font-size: 1.1rem; color: #6b7280; margin-bottom: 2rem;">
+            <h2 style="color: #1a202c; margin-bottom: 1.5rem;">🎯 Bem-vindo à Tua Calculadora Fitness!</h2>
+            <p style="font-size: 1.1rem; color: #718096; margin-bottom: 2rem;">
                 Descobre as tuas necessidades calóricas personalizadas e recebe sugestões de refeições adaptadas aos teus objectivos.
             </p>
         </div>
@@ -1901,7 +1902,7 @@ def main():
         
         with col1:
             st.markdown("""
-            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 12px; text-align: center; color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div style="background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%); padding: 2rem; border-radius: 12px; text-align: center; color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); border: 1px solid #4a5568;">
                 <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
                 <h3 style="margin-bottom: 0.5rem; color: white;">Cálculo Preciso</h3>
                 <p style="font-size: 0.9rem; margin: 0; opacity: 0.9;">
@@ -1912,7 +1913,7 @@ def main():
         
         with col2:
             st.markdown("""
-            <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 2rem; border-radius: 12px; text-align: center; color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div style="background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%); padding: 2rem; border-radius: 12px; text-align: center; color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); border: 1px solid #718096;">
                 <div style="font-size: 3rem; margin-bottom: 1rem;">🍽️</div>
                 <h3 style="margin-bottom: 0.5rem; color: white;">50+ Receitas</h3>
                 <p style="font-size: 0.9rem; margin: 0; opacity: 0.9;">
@@ -1923,10 +1924,10 @@ def main():
         
         with col3:
             st.markdown("""
-            <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 2rem; border-radius: 12px; text-align: center; color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center; color: #1a202c; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); border: 2px solid #e2e8f0;">
                 <div style="font-size: 3rem; margin-bottom: 1rem;">💪</div>
-                <h3 style="margin-bottom: 0.5rem; color: white;">100% Personalizado</h3>
-                <p style="font-size: 0.9rem; margin: 0; opacity: 0.9;">
+                <h3 style="margin-bottom: 0.5rem; color: #1a202c;">100% Personalizado</h3>
+                <p style="font-size: 0.9rem; margin: 0; color: #4a5568;">
                     Adaptado ao teu perfil, actividade e objectivos
                 </p>
             </div>
@@ -1936,28 +1937,28 @@ def main():
         
         # Informação adicional com ícones
         st.markdown("""
-        <div style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
-            <h3 style="text-align: center; color: #1f2937; margin-bottom: 1.5rem;">📝 Como Funciona?</h3>
+        <div style="background: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border: 1px solid #e2e8f0; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);">
+            <h3 style="text-align: center; color: #1a202c; margin-bottom: 1.5rem;">📝 Como Funciona?</h3>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
                 <div style="display: flex; align-items: start; gap: 1rem;">
-                    <div style="background: #667eea; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+                    <div style="background: #2d3748; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
                     <div>
-                        <h4 style="margin: 0 0 0.5rem 0; color: #1f2937;">Preenche os Teus Dados</h4>
-                        <p style="margin: 0; color: #6b7280; font-size: 0.9rem;">Idade, peso, altura e nível de actividade</p>
+                        <h4 style="margin: 0 0 0.5rem 0; color: #1a202c;">Preenche os Teus Dados</h4>
+                        <p style="margin: 0; color: #718096; font-size: 0.9rem;">Idade, peso, altura e nível de actividade</p>
                     </div>
                 </div>
                 <div style="display: flex; align-items: start; gap: 1rem;">
-                    <div style="background: #f5576c; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+                    <div style="background: #4a5568; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
                     <div>
-                        <h4 style="margin: 0 0 0.5rem 0; color: #1f2937;">Define o Teu Objectivo</h4>
-                        <p style="margin: 0; color: #6b7280; font-size: 0.9rem;">Perder, manter ou ganhar peso</p>
+                        <h4 style="margin: 0 0 0.5rem 0; color: #1a202c;">Define o Teu Objectivo</h4>
+                        <p style="margin: 0; color: #718096; font-size: 0.9rem;">Perder, manter ou ganhar peso</p>
                     </div>
                 </div>
                 <div style="display: flex; align-items: start; gap: 1rem;">
-                    <div style="background: #00f2fe; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+                    <div style="background: #718096; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
                     <div>
-                        <h4 style="margin: 0 0 0.5rem 0; color: #1f2937;">Recebe o Teu Plano</h4>
-                        <p style="margin: 0; color: #6b7280; font-size: 0.9rem;">Calorias, macros e sugestões de refeições</p>
+                        <h4 style="margin: 0 0 0.5rem 0; color: #1a202c;">Recebe o Teu Plano</h4>
+                        <p style="margin: 0; color: #718096; font-size: 0.9rem;">Calorias, macros e sugestões de refeições</p>
                     </div>
                 </div>
             </div>
