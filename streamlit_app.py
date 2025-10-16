@@ -2098,14 +2098,14 @@ def create_footer():
             logo_data = base64.b64encode(f.read()).decode()
         
         st.markdown(f"""
-        <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); margin: 2rem -1rem -1rem -1rem; border-radius: 12px 12px 0 0;">
+        <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%); margin: 2rem -1rem -1rem -1rem; border-radius: 12px 12px 0 0;">
             <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
                 <img src="data:image/png;base64,{logo_data}" alt="Luis Ferreira Logo" style="height: 80px; object-fit: contain;">
             </div>
-            <p style="color: #6b7280; font-size: 0.9rem; margin: 0;">
+            <p style="color: #e2e8f0; font-size: 0.9rem; margin: 0;">
                 Desenvolvido com ❤️ para te ajudar a alcançar os teus objectivos fitness
             </p>
-            <p style="color: #9ca3af; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
+            <p style="color: #cbd5e0; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
                 © 2024 - Todos os direitos reservados
             </p>
         </div>
@@ -2113,11 +2113,11 @@ def create_footer():
     else:
         # Fallback sem logo
         st.markdown("""
-        <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); margin: 2rem -1rem -1rem -1rem; border-radius: 12px 12px 0 0;">
-            <p style="color: #6b7280; font-size: 0.9rem; margin: 0;">
+        <div style="text-align: center; padding: 2rem 0; background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%); margin: 2rem -1rem -1rem -1rem; border-radius: 12px 12px 0 0;">
+            <p style="color: #e2e8f0; font-size: 0.9rem; margin: 0;">
                 Desenvolvido com ❤️ para te ajudar a alcançar os teus objectivos fitness
             </p>
-            <p style="color: #9ca3af; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
+            <p style="color: #cbd5e0; font-size: 0.8rem; margin: 0.5rem 0 0 0;">
                 © 2024 - Todos os direitos reservados
             </p>
         </div>
