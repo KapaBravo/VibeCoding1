@@ -1776,7 +1776,7 @@ def create_header():
             <div class="header-content">
                 <div class="logo-section">
                     <div class="logo-image">
-                        <img src="data:image/png;base64,{logo_data}" alt="Luis Ferreira Logo" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                        <img src="data:image/png;base64,{logo_data}" alt="Luis Ferreira Logo" style="width: 80px; height: 80px; object-fit: contain;">
                     </div>
                     <div class="brand-info">
                         <h1>Luis Ferreira</h1>
