@@ -1882,10 +1882,6 @@ def main():
     # Criar header personalizado
     create_header()
     
-    # Título principal
-    st.markdown("### 👈🏽 Para fazeres magia, preenche as tuas informações do lado esquerdo")
-    st.markdown("---")
-    
     # Área central antes dos resultados - Cards informativos
     if not st.session_state.get('calculated', False):
         st.markdown("""
@@ -1964,6 +1960,10 @@ def main():
             </div>
         </div>
         """, unsafe_allow_html=True)
+        
+        # Instrução para preencher o formulário
+        st.markdown("---")
+        st.markdown("### 👈🏽 Para fazeres magia, preenche as tuas informações do lado esquerdo")
     
     # Sidebar para informações pessoais
     with st.sidebar:
