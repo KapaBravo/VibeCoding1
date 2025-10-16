@@ -2512,7 +2512,7 @@ def get_meal_image(meal_name, category):
         "Torrada de Abacate com Ovo e Amendoim": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800&q=80",
         
         # Almoço
-        "Salada de Frango Grelhado": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80",
+        "Salada de Frango Grelhado": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&q=80",
         "Salmão com Legumes Assados": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
         "Quinoa com Legumes": "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=800&q=80",
         "Wrap de Atum Light": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800&q=80",
@@ -2553,6 +2553,44 @@ def get_meal_image(meal_name, category):
         "Vitamina de Banana com Aveia": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=800&q=80",
         "Milkshake Proteico": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800&q=80",
         "Chocolate 70% com Amêndoas": "https://images.unsplash.com/photo-1511381939415-e44015466834?w=800&q=80",
+        
+        # Receitas dietéticas - Vegetarianas
+        "Salada de Quinoa com Grão e Vegetais": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+        "Sopa Cremosa de Lentilhas e Cenoura": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
+        "Tofu Salteado com Brócolos e Gengibre": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=800&q=80",
+        "Risotto de Cogumelos e Espinafres": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=800&q=80",
+        "Caril de Grão-de-Bico e Batata-Doce": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800&q=80",
+        "Wrap Vegetariano com Húmus e Falafel": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800&q=80",
+        "Lasanha Vegetariana de Beringela e Ricotta": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&q=80",
+        "Bowl de Quinoa com Abacate e Ovo Escalfado": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+        "Smoothie Bowl Proteico com Manteiga de Amendoim": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=800&q=80",
+        
+        # Receitas dietéticas - Sem glúten
+        "Salada de Atum com Feijão Branco e Rúcula": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+        "Omelete de Claras com Cogumelos e Espargos": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800&q=80",
+        "Ceviche de Peixe Branco com Batata-Doce": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800&q=80",
+        "Frango Grelhado com Batata-Doce Assada e Brócolos": "https://images.unsplash.com/photo-1598511726623-d2e9996892f0?w=800&q=80",
+        "Arroz de Pato com Cenoura e Courgette": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800&q=80",
+        "Tacos de Peixe com Tortilhas de Milho": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&q=80",
+        "Bife de Vaca com Arroz Integral e Ovo Estrelado": "https://images.unsplash.com/photo-1558030006-450675393462?w=800&q=80",
+        "Salmão com Puré de Batata-Doce e Espinafres Salteados": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
+        "Bowl de Quinoa com Frango, Abacate e Amêndoas": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+        
+        # Receitas da Spoonacular API
+        "Sopa Mediterrânica de Vegetais Assados": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
+        "Camarão com Espargos e Molho de Limão": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800&q=80",
+        "Peixe Assado ao Estilo Grego": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
+        "Jambalaya de Frango": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=800&q=80",
+        "Risotto de Quinoa com Salmão": "https://images.unsplash.com/photo-1574484284002-952d92456975?w=800&q=80",
+        "Rolo de Frango com Batata-Doce e Queijo": "https://images.unsplash.com/photo-1598511726623-d2e9996892f0?w=800&q=80",
+        "Pimentos Recheados com Peru e Arroz": "https://images.unsplash.com/photo-1572695157849-1af97d311a1c?w=800&q=80",
+        "Almôndegas Turcas com Arroz de Lentilhas": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=800&q=80",
+        
+        # Receitas que estavam com imagens genéricas
+        "Salada de Frango Grelhado": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&q=80",
+        "Bowl de Quinoa Completo": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+        "Smoothie Proteico de Amêndoa e Matcha": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=800&q=80",
+        "Salada de Atum com Feijão Branco e Rúcula": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
     }
     
     # Retorna imagem específica ou genérica por categoria
