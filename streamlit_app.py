@@ -2906,10 +2906,12 @@ def main():
         
         # Instrução para preencher o formulário
     st.markdown("---")
-    st.markdown("### 👈🏽 Para fazeres magia, preenche as tuas informações do lado esquerdo")
+    st.markdown("### ✨ Para fazeres magia, preenche as tuas informações abaixo")
     
-    # Sidebar para informações pessoais
-    with st.sidebar:
+    # Área centralizada para informações pessoais
+    col_left, col_center, col_right = st.columns([1, 2, 1])
+    
+    with col_center:
         st.header("📊 As Tuas Informações")
         
         sex = st.selectbox("Sexo", ["M", "F"], help="M para Masculino, F para Feminino")
