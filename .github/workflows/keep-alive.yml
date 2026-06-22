@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Visit Streamlit app
+      - name: Wake app
         run: |
-          curl -I --max-time 30 https://kapabravo-calorie-calculator.streamlit.app
+          wget -q -O /dev/null https://kapabravo-calorie-calculator.streamlit.app || true
